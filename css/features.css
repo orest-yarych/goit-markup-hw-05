@@ -1,0 +1,36 @@
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.features-item-tille {
+  text-align: left;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.features-item-tille {
+  margin-bottom: 8px;
+}
+
+.features-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  width: 100%;
+  height: 112px;
+  margin-bottom: 8px;
+
+  background: var(--cloud);
+}
