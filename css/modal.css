@@ -92,6 +92,10 @@
   min-height: 120px;
   padding: 8px 16px;
 
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
   resize: none;
   outline: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -99,7 +103,7 @@
 }
 
 .form-textarea::placeholder {
-  color: rgba(46, 47, 66, 0.4);
+  color: var(--navy-blue-modal);
 }
 
 .form-input,
@@ -168,8 +172,6 @@
 }
 
 .form-private-policy-link {
-  /* line-height: 16px; */
-  line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--iris);
