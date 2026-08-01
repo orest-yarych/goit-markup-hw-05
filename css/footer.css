@@ -71,12 +71,23 @@
   width: 264px;
   padding: 8px 16px;
 
+  font-weight: 400;
+  font-size: 12px;
+
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: var(--white);
+
+  border-radius: 4px;
   border: 1px solid var(--white);
+
+  transition: border-color var(--animation);
   background: transparent;
+  outline: none;
 }
 
 .footer .footer-form-input:focus {
-  border: 1px solid var(--green);
+  border-color: var(--green);
 }
 
 .footer .footer-form-input::placeholder {
@@ -102,14 +113,17 @@
   height: 40px;
   max-width: 165px;
 
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
 
+  transition: background-color var(--animation);
   background-color: var(--iris);
 }
 
-.footer-form-button:hover {
+.footer-form-button:hover,
+.footer-form-button:focus {
   background-color: var(--green);
 }
 
