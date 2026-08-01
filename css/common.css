@@ -143,9 +143,7 @@ img {
   letter-spacing: 0.04em;
 
   border: none;
-  transition:
-    background-color var(--animation),
-    box-shadow var(--animation);
+  transition: background-color var(--animation);
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: var(--iris);

@@ -56,13 +56,15 @@
   background: var(--cornflower);
 }
 
-.modal-close-button:hover {
+.modal-close-button:hover,
+.modal-close-button:focus {
   border-color: var(--ocean);
   background-color: var(--ocean);
   color: var(--white);
 }
 
-.close-icon:hover {
+.modal-close-button:hover .close-icon,
+.modal-close-button:focus .close-icon {
   fill: var(--white);
 }
 
@@ -93,6 +95,7 @@
   resize: none;
   outline: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
 }
 
 .form-textarea::placeholder {
@@ -126,6 +129,7 @@
   left: 16px;
   transform: translateY(-50%);
   transition: fill var(--animation);
+  fill: var(--navy-blue);
 }
 
 .form-label {
