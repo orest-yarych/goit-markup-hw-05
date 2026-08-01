@@ -65,3 +65,126 @@
   text-align: center;
   color: var(--navy-blue);
 }
+
+.form-input {
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 4px;
+  padding: 8px 38px;
+  max-width: 360px;
+  min-height: 40px;
+}
+
+.form-textarea {
+  min-height: 120px;
+  padding: 8px 16px;
+
+  resize: none;
+}
+
+.form-input,
+.form-textarea {
+  transition: border-color var(--animation);
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.checkbox-wrapper {
+  margin-bottom: 24px;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill var(--animation);
+}
+
+.form-label {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-checkbox:focus {
+  border-color: var(--iris);
+}
+
+.input-wrapper:focus-within .form-icon {
+  fill: var(--iris);
+}
+
+.form-input,
+.form-textarea {
+  caret-color: var(--navy-blue);
+}
+
+.form-private-policy {
+  font-weight: 400;
+  font-size: 12px;
+
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+}
+
+.form-private-policy-link {
+  /* line-height: 16px; */
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--iris);
+}
+
+.form-label-private-policy {
+  display: flex;
+  align-items: center;
+}
+
+.form-checkbox-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-radius: 2px;
+  border: 1px solid var(--navy-blue-modal);
+  transition:
+    border-color var(--animation),
+    background-color var(--animation);
+}
+
+.form-checkbox-icon {
+  opacity: 0;
+  transition: opacity var(--animation);
+}
+
+.form-checkbox {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-checkbox:checked + .form-label-private-policy .form-checkbox-icon {
+  opacity: 1;
+}
+
+.form-checkbox:checked + .form-label-private-policy .form-checkbox-wrapper {
+  border-color: var(--ocean);
+  background-color: var(--ocean);
+}

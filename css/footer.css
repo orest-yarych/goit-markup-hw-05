@@ -27,14 +27,6 @@
   width: 208px;
 }
 
-.footer-social-title {
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  text-align: left;
-  color: var(--white);
-}
-
 .footer-icon-link {
   display: flex;
   width: 40px;
@@ -62,4 +54,72 @@
   justify-content: center;
   flex-direction: row;
   gap: 16px;
+}
+
+.footer-subscribe {
+  width: 453px;
+  margin-left: auto;
+}
+
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .footer-form-input {
+  width: 264px;
+  padding: 8px 16px;
+
+  border: 1px solid var(--white);
+  background: transparent;
+}
+
+.footer .footer-form-input:focus {
+  border: 1px solid var(--green);
+}
+
+.footer .footer-form-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+
+  /* line-height: 14px; */
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+
+.footer-form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  max-width: 165px;
+
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+
+  background-color: var(--iris);
+}
+
+.footer-form-button:hover {
+  background-color: var(--green);
+}
+
+.footer-subtitle {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--white);
 }
