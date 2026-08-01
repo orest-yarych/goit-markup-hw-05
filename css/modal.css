@@ -197,6 +197,7 @@
 }
 
 .form-checkbox-icon {
+  fill: var(--cloud);
   opacity: 0;
   transition: opacity var(--animation);
 }
