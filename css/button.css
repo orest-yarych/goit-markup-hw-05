@@ -1,0 +1,27 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 169px;
+  padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 500;
+  letter-spacing: 0.04em;
+
+  border: none;
+  transition:
+    background-color var(--animation),
+    box-shadow var(--animation);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--iris);
+  color: var(--white);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--ocean);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
